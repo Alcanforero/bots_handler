@@ -1,0 +1,9 @@
+FACEBOOK_TOKEN = '[FACEBOOK_IDENTIFIER]'
+FACEBOOK_ID = '[FACEBOOK_VERIFY]'
+
+REQUEST_HEADER = 'https://api.telegram.org/bot[TELEGRAM_TOKEN]'
+LOCAL_WEBHOOK_ENDPOINT = '[URL pública del servicio web]/telegram'
+
+TELEGRAM_INIT_WEBHOOK_URL = REQUEST_HEADER + '/setWebhook?url=' + LOCAL_WEBHOOK_ENDPOINT
+
+TELEGRAM_SEND_MESSAGE_URL = REQUEST_HEADER + '/sendMessage?chat_id={}&text={}'
